@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Morse Code Translator</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather">
+        <link rel="stylesheet" href="style.css">
+        <script src="Tone.min.js"></script>
+    </head>
+    <body>
+        <div id="header" class="jumbotron text-center">
+            <h1>Morse Code Translator</h1>
+            <p>A tiny website made by Cinty.</p>
+        </div>
+
+        <div id="body" class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <label for="input-type" style="margin-left: 10%; font-size: 1.5em;">Input:</label>
+                    <select id="input-type">
+                        <option value="text">Plain Text</option>
+                        <option value="morse">Morse Code</option>
+                    </select>
+                    <textarea id="inputText" style="margin-left: 10%;" placeholder="Type text or Morse code using '.' or '-', using spaces between letters and '/' between words."></textarea>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <label style="margin-left: 10%; font-size: 1.5em;">Output:</label>
+                    <textarea id="outputText" style="margin-left: 10%;" placeholder="Translation will appear here..." readonly></textarea>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 text-center"> <!-- This div centers the button -->
+                    <button id="play" class="btn btn-primary">Play Morse Sequence</button>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+#header{
+    font-family: "Montserrat", sans-serif;
+}
+
+#body{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#inputText, #outputText{
+    font-size: larger;
+    width: 80%; 
+    height: 150px;
+}
+
+#play {
+    margin-top: 3%;
+    font-size: 1.2em;
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default button border */
+    padding: 10px 20px; /* Adjust padding */
+    border-radius: 5px; /* Add border radius */
+}
+
+#play:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
